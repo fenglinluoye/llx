@@ -1,0 +1,11 @@
+# 重定向规则 - 处理多页面路由
+/blog     /blog.html     200
+/about    /about.html    200
+/blog/*   /blog.html     200
+/about/*  /about.html    200
+
+# API重定向（如果需要）
+/api/*    https://your-project-ref.supabase.co/:splat  200
+
+# 404页面
+/*        /404.html     404
